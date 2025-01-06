@@ -1,0 +1,25 @@
+<!-- write a js to find that given number is lucky number or not. given number is lucky if sum of all its digits =1 -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>max</title>
+        <script>
+            n=6661
+            function lukcky(n) {
+                while (n>0) {
+                    temp=n%10
+                    sum+=temp
+                    n/=10
+                }
+                if(sum==1) {
+                    document.write("number lucky")
+                }else{
+                   return lukcky(sum)
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="lukcky(6661)" value="click">
+    </body>
+    </html>

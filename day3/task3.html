@@ -1,0 +1,51 @@
+<!-- write a js to handle following mouse events 
+ 
+1. if mouse is over headign should turn yellow color 
+2. if mouse goes out then it should turn black color 
+3. if find time button is clicked then show date and time information 
+4. if button name pink is clicked then background color should turn pink and button name green is click then background color should turn green (body)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function yel(id){
+            id.style.color='yellow'
+        }
+        function bl(id){
+            id.style.color='black'
+        }
+        function pkh(id){
+            id.style.backgroundColor='pink'
+        }
+        function dt(){
+            document.write()
+        }
+        function dt() {
+            var d=new Date()
+            document.getElementById("dt").innerHTML=d
+        }
+        function pk(id){
+            id.setAttribute('bgcolor','pink')
+        }
+        function gr(id){
+            id.setAttribute('bgcolor','green')
+        }
+    </script>
+</head>
+<body id="a">
+    <h1 id="h" onmouseover="yel(this)" onmouseout="bl(this)">Heading</h1>
+    <span>Date & Time: </span>
+    <span id="dt"></span><br>
+    <input type="button" onclick="dt()" value="Find Time">
+    <input type="button" onclick="pk(a)" value="pink">
+    <input type="button" onclick="pkh(h)" value="pinkhead">
+    <input type="button" onclick="gr(a)" value="green">
+
+</body>
+</html>

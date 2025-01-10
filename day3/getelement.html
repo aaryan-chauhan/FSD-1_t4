@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get element by tag name</title>
+    <script>
+        function fun(){
+            c1=document.getElementsByTagName("p")
+            for (i = 0; i < c1.length; i++){
+                c1[i].innerHTML='changeText'
+                c1[i].style.color='red'
+                c1[i].style.backgroundColor='blue'
+            }
+        }
+        function fun1(){
+            c1=document.getElementsByClassName("same")
+            for (i = 0; i < c1.length; i++){
+                c1[i].innerHTML='changeText'
+                c1[i].style.color='red'
+                c1[i].style.backgroundColor='orange'
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>tag</p>
+    <p>tag</p>
+    <p>tag</p>
+    <div class="same">tag</div><br>
+    <div class="same">tag</div><br>
+    <div class="same">tag</div><br>
+    <input type="button" onclick="fun()" value="click for element">
+    <input type="button" onclick="fun1()" value="click for class">
+</body>
+</html>

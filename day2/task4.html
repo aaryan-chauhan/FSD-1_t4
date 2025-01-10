@@ -1,0 +1,26 @@
+<!-- write a code using js create a function that takes an array of object whcih calculates the total price and return it as a number an object has a product, a qty and price -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculatetotalprice(g1){
+            var totalprice=0;
+            for(i=0;i<g1.length;i++){
+                const{quantity,price}=g1[i]
+                totalprice=quantity*price
+            }
+            return totalprice
+            const e=[{product:'abc',quantity:2,price:80},{product:'xyz',quantity:3,price:70}]
+            const total=calculatetotalprice(e)
+            console.log(total.toFixed(1));
+            
+        }
+    </script>
+ </head>
+ <body>
+    
+ </body>
+ </html>

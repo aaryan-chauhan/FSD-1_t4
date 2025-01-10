@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var emp={
+            id:101,
+            name:'xyz',
+            city:'pqr'
+        }
+        var emp1=new Object()
+        emp1.id=102
+        emp1.name='aaryan'
+        emp1.city='ahmd'
+        function emp(id,name,city){
+            this.id=id
+            this.name=name
+            this.city=city
+        }
+        e=new emp(103,'nirav','kheda')
+        document.write(emp.id+" "+emp.name+" "+emp.city+"<BR>")
+        document.write(emp1.id+" "+emp1.name+" "+emp1.city+"<BR>")
+        document.write(e.id+" "+e.name+" "+e.city+"<BR>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

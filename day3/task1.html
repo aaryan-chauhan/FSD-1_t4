@@ -1,0 +1,28 @@
+<!-- write a script to convert text to uppercase by clicking on button upper and convert text to lower case by clicking on button lower using dom method  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function up() {
+            c=document.getElementById('good')
+            c.style.textTransform='uppercase'
+            c.style.color='red'
+            c.style.backgroundColor='blue'
+        }
+        function low() {
+            c=document.getElementById('good')
+            c.style.textTransform='lowercase'
+            c.style.color='blue'
+            c.style.backgroundColor='red'
+        }
+    </script>
+ </head>
+ <body>
+    <p id="good">Good Morning, I am Aaryan Chauhan</p>
+    <input type="button" onclick="up()" value="Upper">
+    <input type="button" onclick="low()" value="Lower">
+ </body>
+ </html>

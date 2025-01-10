@@ -1,0 +1,22 @@
+<!-- write a javascript that finds the position of first occurence of vovel a and last occurence of 
+ vovel 'a' in the given word 'ajanta' also return the string between them using string inbuilt object  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        word='ajanta'
+        vovel='a'
+        first=word.indexOf(vovel)
+        last=word.lastIndexOf(vovel)
+        document.write("first: "+first+"<br>")
+        document.write("last: "+last+"<br>")
+        document.write("Final: "+word.substring((first+1),last)+"<br>")
+    </script>
+ </head>
+ <body>
+    
+ </body>
+ </html>

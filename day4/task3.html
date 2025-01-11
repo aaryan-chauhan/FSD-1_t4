@@ -1,0 +1,28 @@
+<!-- write a js to handle following key events 
+ give keycode for the key pressed 
+ script should give msg vovel is pressed on pressing a vovel key 
+ bgcolor should change to red after releasing key pressed-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(e){
+            document.write(e.keyCode+"<BR>")
+            if(e.key=='a'|| e.key=='e'||e.key=='i'||e.key=='o'||e.key=='u'){
+                document.write(e.key+" is a vovel <BR>")
+            }else{
+                document.write(e.key+" is a not a vovel <BR>")
+            }
+        }
+        function fun1(id){
+            id.bgColor='red'
+        }
+    </script>
+ </head>
+ <body onkeypress="fun(event)" onkeyup="fun1(this)">
+    
+ </body>
+ </html>

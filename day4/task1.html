@@ -1,0 +1,22 @@
+<!--
+write a js that handles following form events add one input feild 
+ if the field is in focus change it's background color to red
+ change text to lower case only when the value of field is changed 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(id){
+            id.value=id.value.toLowerCase()
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onfocus="this.style.backgroundColor='red'" onchange="fun(this)">
+</body>
+</html>

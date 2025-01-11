@@ -1,0 +1,37 @@
+<!-- write a js that handles following mouse events add necessary elements 
+ if the mouse is over the heading should change its text and color red and if the mouse goes out of the heading the text should return with same text as before and color should turn black 
+ if mouse button is pressed background color should be black if mouse button is released background color should be cyan -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        c=getElementById('h')
+        function fun(id){
+            id.style.color='red'
+            id.innerHTML='changed text'
+        }
+        function fun1(id){
+            id.style.color='black'
+        }
+        function fun2(id){
+            // id.setAttribute('bgColor','black')
+        }
+        function fun3(e,id){
+            c=e.button
+            if(c==0){
+                id.setAttribute('bgColor','black')
+            }
+            if(c==2){
+                id.setAttribute('bgColor','cyan')
+            }
+        }
+    
+    </script>
+ </head>
+ <body id="a">
+    <h1 onmouseover="fun(this)" onmouseout="fun1(this)" onclick="fun2(a)" onmousedown="fun3(event,a)" >Heading</h1>
+ </body>
+ </html>

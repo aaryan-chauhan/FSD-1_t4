@@ -1,0 +1,37 @@
+<!-- obj=document.form.['formname']['elementname'].value -->
+<!-- obj=document.formname.elementname.value -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            obj=document.f1.t1.value
+            if(obj==''){
+                alert("Enter something")
+            }else{
+
+                document.write(obj)
+            }
+            // obj1=document.forms['f1']
+            // document.write(obj1)
+        }
+        // function fun(id){
+        //     obj=id.value
+        //     document.write(obj)
+        // }
+
+    </script>
+</head>
+<body>
+    <form name="f1" onsubmit="fun()">
+        Username: <input type="text" name="t1">
+        Password: <input type="password">
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>

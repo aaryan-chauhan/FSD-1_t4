@@ -1,0 +1,27 @@
+<!-- write a js to take 2 digit number and then seperate these 2 digits then multiply first digit by itself for second digit times 
+ for eg: 23 =2,3
+ 2*2*2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            num=document.f1.t1.value
+            d1=num[0]
+            d2=num[1]
+            document.write(Math.pow(d1,d2))
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="fun()" name="f1">
+        number: <input type="text" name="t1" >
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

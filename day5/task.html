@@ -1,0 +1,18 @@
+<!-- design a login form using html or js following validation in pass field minmum length of pass must be 8 letters and it must have some special charachters  -->
+ <html>
+    <head>
+        <script>
+            function fun(){
+                pat=/\W/ ;
+                u=document.getElementById('m').value;
+                if(pat.test(u) && u.length==8){
+                    alert("valid")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="password" id="m">
+        <input type="submit" value="submit" onclick="fun()">
+    </body>
+ </html>

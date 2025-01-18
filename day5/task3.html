@@ -1,0 +1,41 @@
+<!-- show validation using js on fields like name phone number and email ID  
+RE for UserName---=>/^[A-z]+$/ 
+RE for phoneno----=>/^\d{10}$/ 
+RE for email -----=>/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+
+
+-->
+<html>
+    <head>
+        <script>
+            pat1=/^[A-z]+$/
+            pat2=/^\d{10}$/ 
+            pat3=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            u1=document.getElementById('t1').value;
+            if(pat1.test(u1)){
+                alert("Valid username")
+            }else{
+                alert("InValid username")
+            }
+            u2=document.getElementById('t2').value;
+            if(pat1.test(u2)){
+                alert("Valid PH")
+            }else{
+                alert("InValid PH")
+            }
+            u3=document.getElementById('t3').value;
+            if(pat1.test(u3)){
+                alert("Valid email")
+            }else{
+                alert("InValid email")
+            }
+        </script>
+    </head>
+    <body>
+        username: <input type="text" id="t1">
+        phoneno: <input type="text" id="t2">
+        email: <input type="text" id="t3">
+        <input type="submit" onclick="fun()">
+    </body>
+</html>

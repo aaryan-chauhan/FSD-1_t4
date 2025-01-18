@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function fun(){
+                Pat=/[abc]/i//a|b|c anything comes then it says true
+                u=document.getElementById('t1').value;
+                if(Pat.test(u)){
+                    alert("Perfect match")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="t1">
+        <input type="submit" value="submit" onclick="fun()">
+    </body>
+</html>

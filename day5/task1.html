@@ -1,0 +1,31 @@
+<!-- write a js to validate username and password 
+1. for pass  length must be of 6-12 charrachters 
+2. for username field should not start with _@ and any number 
+3.both must not be blank -->
+
+<html>
+    <head>
+        <script>
+            function fun(){
+                pat=/^_|^@|\d/
+                u=document.getElementById('u').value
+                u1=document.getElementById('p').value
+                if(!pat.test(u) && (u.length>=0))  {
+                    alert("Valid username")
+                }else{
+                    alert("no user name ")
+                }
+                if(u1.length>=6 && u1.length<=12){
+                    alert("Valid pass")
+                }else{
+                    alert("no good pass")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        username: <input type="text" id="u">
+        password: <input type="password" id="p">
+        <input type="submit" value="submit" onclick="fun()">
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!-- write html form accepting an integer having 4 digits input should not accept charachters of letters and special symbols  -->
+
+<html>
+    <head>
+        <script>
+            function fun(){
+                pat=/^\d+$/
+                u=document.getElementById("m").value
+                if((pat.test(u)) && u.length==4){
+                    alert("Valid")
+                }else{
+                    alert("InValid")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="m">
+        <input type="submit" value="submit" onclick="fun()">
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!-- Write a Code using JS create a function that takes an array of object which calculates the total price and retrun it as a number a object has a product,a quantity and a price  -->
+<html>
+
+<head>
+    <script>
+        function calculatetotalprice(g1) {
+            var totalprice = 0;
+            for (var i = 0; i < g1.length; i++) {
+                const { quantity, price } = g1[i];
+                totalprice = quantity * price;
+            }
+            return totalprice;
+            const e = [{
+                product: "abc",
+                quantity: 2,
+                price: 80
+            }, {
+                product: "xyz",
+                quantity: 3,
+                price: 70
+            }
+            ]
+            const total = calculatetotalprice(e);
+            console.log(total.toFixed(1));
+        }
+    </script>
+</head>
+
+</html>

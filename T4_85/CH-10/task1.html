@@ -1,0 +1,18 @@
+<!-- write a ES6 Function to be called on button click takwe one division with some text and no decoration initially take fontsize and style as a default argument and pass background colour and set colour while passing argument to function style should change on button click  -->
+ <html>
+    <head>
+        <script>
+            defaultFun=(bg,tx,size=50,style='italic')=>{
+                i = document.getElementById("d1")
+                i.style.color=tx;
+                i.style.fontStyle = style;
+                i.style.backgroundColor = bg;
+                i.style.fontSize = size;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d1" style="width: 50%; height: 50%;background-color: blue;color: pink;">This is JS</div>
+        <input type="submit" onclick="defaultFun('pink','blue')" value="click"> 
+    </body>
+ </html>

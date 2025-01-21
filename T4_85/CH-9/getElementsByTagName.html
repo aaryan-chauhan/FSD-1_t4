@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function fun(){
+                c1 = document.getElementsByClassName("same");
+                for(i=0;i<c1.length;i++){
+                    c1[i].innerHTML="ChangeText";
+                    c1[i].style.color = "red";
+                    c1[i].style.backgroundColor="blue";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <P class="same">Hello</P>
+        <h1 class="same">Hi</h1>
+        <pre class="same">How
+            Are
+            you?
+        </pre>
+        <input type="button" onclick="fun()" value="click">
+    </body>
+</html>

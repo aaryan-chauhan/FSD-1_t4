@@ -1,0 +1,18 @@
+<!-- write a JS that handles following form events add one input feild 
+1. if the feild is infocus change it's background color to red 
+2. change text to lower case only when the value of the feild is changed -->
+<html>
+
+<head>
+    <script>
+        function fun(id) {
+            id.value = id.value.toLowerCase()
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" onchange="fun(this)" onfocus="this.style.backgroundColor='red'">
+</body>
+
+</html>

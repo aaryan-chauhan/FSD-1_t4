@@ -1,0 +1,24 @@
+<!-- write a script to convert text to upper case by clicking on button upper and convewrt text to lower case by clicking on button lower using DOM Method -->
+<html>
+    <head>
+        <script>
+            function up(){
+            c1 = document.getElementsByClassName("up");
+            for(i=0;i<c1.length;i++){
+                c1[i].style.textTransform="uppercase";
+                }
+            }
+            function low(){
+            c2 = document.getElementsByClassName("up");
+            for(i=0;i<c1.length;i++){
+                c2[i].style.textTransform="lowercase";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <P class="up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta est aperiam sed saepe voluptatem, illum ipsa sunt. Omnis eligendi magni, aperiam dolorem aspernatur libero, aliquam et dolorum culpa rerum dolore.</P>
+        <input type="button" onclick="up()" value="Upper">
+        <input type="button" onclick="low()" value="Lower">
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            var emp = {
+                id : 101,
+                name : "Rahul",
+                city : "pqr"
+            }
+            document.write(emp.id + " " + emp.name + " " + emp.city + "<br>");
+           
+            var emp1 = new Object();
+            emp1.id = 102;
+            emp1.name = "Mahesh";
+            emp1.city = "qwe";
+            document.write(emp1.id + " " + emp1.name + " " + emp1.city + "<br>");
+            
+            function emp2(id,name,city){
+                this.id = id;
+                this.name = name;
+                this.city = city;
+            }
+            emp2 = new emp2(103,"Ramesh","adsf");
+            document.write(emp2.id + " " + emp2.name + " " + emp2.city + "<br>");
+
+        </script>
+    </head>
+</html>

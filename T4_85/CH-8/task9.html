@@ -1,0 +1,17 @@
+<!-- write a JS that print all odd char in given string (ex. "ANCDEFGH" -> "BDFH") -->
+ <html>
+    <head>
+        <script>
+            function odd(word){
+                for(i = 0;i<= word.length;i++){
+                    if(i % 2 != 0){
+                        document.write(word[i]);
+                    }
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <button type="button" onclick="odd('ABCDEFGH')">odd</button>
+    </body>
+ </html>

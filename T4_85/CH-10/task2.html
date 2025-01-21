@@ -1,0 +1,29 @@
+<!-- write a JS or HTML to add a heading,an image and a button intially display "Hello world" text as a heading and image "img1.png" without any decoration a function to be called on button click and perform task as ask below 
+ 1. pass 3 default parameter for fontsize,fontcolor and text
+ 2. the text parameter must be passed as a default parameter with good morning value 
+ 3. anouther two parameters fontsize,fontcolor must be passed as argumetns while calling the function on button click 
+ 4. also change image to "img2.png" by clicking on button -->
+<html>
+
+<head>
+    <script>
+        fun = (fsize, fclr, ftxt = 'Good Morning', ig1 = "img2.png") => {
+            i = document.getElementById("d1");
+            ig = document.getElementById("i1");
+            i.style.fontSize = fsize;
+            i.style.color = fclr;
+            i.innerHTML = ftxt;
+            ig.img.src = ig1;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="d1" style="width: 50%; height: 50%;">
+        <h2>Hello World</h2>
+        <img src="img1.png" id="i1" alt="">
+    </div>
+    <input type="submit" onclick="fun(50,'red')" value="click">
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!-- write HTML form accepting an intager having four digits input should not accept char of letters and special symbols -->
+<html>
+    <head>
+        <script>
+            function fun(){
+                pat = /^\d+$/;
+                u = document.getElementById("t1").value;
+                if(pat.test(u) && u.length==4){
+                    alert("Valid Input");
+                }
+                else{
+                    alert("In-Valid Input");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" name="" id="t1"/>
+        <input type="submit" onclick="fun()" value="submit"/>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function fun(){
+                pat = /bo*/;
+                u = document.getElementById("t1").value;
+                if(pat.test(u)){
+                    alert("perfact match");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" name="" id="t1"/>
+        <input type="submit" onclick="fun()" value="submit"/>
+    </body>
+</html>

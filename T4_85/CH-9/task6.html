@@ -1,0 +1,25 @@
+<!-- write a JS to handle following key events 
+1. give key code for the key pressed 
+2. script should give message vovel is pressed on pressing vovel key 
+3. background colour should change to red after releasing the keypressed  -->
+<html>
+    <head>
+        <script>
+            
+            function fun1(e){
+                if(e.key == 'a' ||e.key == 'A' ||e.key == 'e' ||e.key == 'E' ||e.key == 'i' ||e.key == 'I' ||e.key == 'o' ||e.key == 'O' ||e.key == 'u' ||e.key == 'U'){
+                    alert("key pressed is Vowel.")
+                }
+                else{
+                    alert("Not Vowel")
+                }
+            }
+           function fun(id){
+            id.bgColor = "red";
+           }
+        </script>
+    </head>
+    <body onkeypress="fun1(event)" onkeydown="fun(this)">        
+        
+    </body>
+</html>
